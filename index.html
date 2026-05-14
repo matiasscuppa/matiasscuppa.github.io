@@ -2,218 +2,241 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <title>Matias Scuppa</title>
-  <link rel="stylesheet" href="style.css">
+
+  <link rel="stylesheet" href="style.css" />
+
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 
 <body>
 
-  <!-- NAVBAR -->
-  <header>
-    <div class="container nav-container">
+  <!-- TOP NAVIGATION -->
+  <nav class="top-nav">
+    <a href="#about" class="active">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#research">Research</a>
+    <a href="#cv">CV</a>
+    <a href="#contact">Contact</a>
+  </nav>
 
-      <div>
-        <h1 class="logo">Matias Scuppa</h1>
-        <p class="subtitle">
-          Electronic Engineer · Marine Electronics · Embedded Systems
+  <main class="page">
+
+    <!-- INTRO -->
+    <section id="about" class="intro">
+
+      <div class="intro-text">
+
+        <h1>
+          <strong>Matias</strong> Scuppa
+        </h1>
+
+        <p class="tagline">
+          Marine Electronics | Embedded Systems | Radar
         </p>
-      </div>
 
-      <nav>
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#research">Research</a>
-        <a href="#experience">Experience</a>
-        <a href="#contact">Contact</a>
-      </nav>
+        <p class="role">
+          Electronic Engineer · Founder & Developer at Loxodrome Tech
+        </p>
 
-    </div>
-  </header>
-
-  <!-- HERO -->
-  <section class="hero">
-    <div class="container">
-
-      <h2>
-        Marine Electronics · Radar · FPGA · NMEA0183
-      </h2>
-
-      <p>
-        Electronic Engineer focused on marine electronics,
-        embedded systems, radar and navigation technologies.
-      </p>
-
-      <a class="button" href="#projects">
-        View Projects
-      </a>
-
-    </div>
-  </section>
-
-  <!-- ABOUT -->
-  <section id="about" class="container section">
-
-    <h2>About</h2>
-
-    <p>
-      I am an Electronic Engineer specialized in marine electronics,
-      embedded systems, radar systems and NMEA0183 communications.
-    </p>
-
-    <p>
-      My work combines field experience in NAVCOM systems
-      with hands-on development of diagnostic tools,
-      FPGA platforms and embedded marine devices.
-    </p>
-
-    <p>
-      Currently focused on embedded development,
-      FPGA-based analysis systems and marine communication technologies.
-    </p>
-
-  </section>
-
-  <!-- PROJECTS -->
-  <section id="projects" class="container section">
-
-    <h2>Projects</h2>
-
-    <div class="grid">
-
-      <div class="card">
-        <h3>NMEA Link</h3>
+        <h2>A Bit About Me</h2>
 
         <p>
-          Portable embedded platform for monitoring,
-          generating and analyzing NMEA0183 data.
+          I am an Electronic Engineer focused on marine electronics,
+          embedded systems, radar and navigation technologies.
         </p>
-      </div>
-
-      <div class="card">
-        <h3>FPGA NMEA Analyzer</h3>
 
         <p>
-          Cyclone 10 FPGA platform for multi-channel
-          serial data analysis and future AI integration.
+          My work combines field experience in NAVCOM systems with
+          hands-on development of diagnostic and monitoring tools for
+          NMEA0183, serial communications and embedded marine platforms
+          through independent R&D projects under Loxodrome Tech.
         </p>
-      </div>
-
-      <div class="card">
-        <h3>AIS + SDR Platform</h3>
 
         <p>
-          AIS reception and Signal K integration using
-          RTL-SDR, Raspberry Pi and embedded Linux systems.
+          Currently focused on embedded development,
+          FPGA-based analysis systems, AIS/SDR platforms,
+          Signal K integration and AI-assisted serial data analysis.
         </p>
+
       </div>
 
-      <div class="card">
-        <h3>Embedded Diagnostics</h3>
+      <!-- PROFILE PHOTO -->
+      <div class="photo-box">
+        <img src="assets/profile.jpg" alt="Matias Scuppa">
+      </div>
+
+    </section>
+
+    <!-- BIO -->
+    <section>
+
+      <details open>
+
+        <summary>
+          Brief Personal Bio
+        </summary>
 
         <p>
-          Development of portable diagnostic and testing
-          tools for marine communication systems.
+          Matias Scuppa is an Electronic Engineer specialized in marine
+          electronics, embedded systems, radar and navigation systems.
         </p>
-      </div>
 
-    </div>
+        <p>
+          He has professional experience in NAVCOM systems and develops
+          embedded diagnostic platforms for marine communication systems,
+          including NMEA0183 monitoring, FPGA-based serial analysis,
+          AIS/SDR systems and portable testing devices.
+        </p>
 
-  </section>
+        <p>
+          Through Loxodrome Tech, he develops independent R&D projects
+          focused on embedded systems, FPGA technologies,
+          marine communications and portable diagnostic solutions.
+        </p>
 
-  <!-- RESEARCH -->
-  <section id="research" class="container section">
+      </details>
 
-    <h2>Research & Development</h2>
+    </section>
 
-    <div class="card">
+    <!-- CERTIFICATIONS -->
+    <section>
+
+      <h2>Honors and Certifications</h2>
 
       <ul>
-        <li>NMEA0183 diagnostics and analysis</li>
-        <li>FPGA embedded systems</li>
-        <li>Marine communication systems</li>
-        <li>Signal processing</li>
-        <li>MATLAB / Simulink integration</li>
-        <li>AI-assisted serial data analysis</li>
-        <li>Radar and navigation systems</li>
+        <li>NACOS Integrated Bridge & Radar Systems Training</li>
+        <li>Terma Radar System Training</li>
+        <li>Cobham SAILOR Maritime SATCOM Systems Training</li>
+        <li>Jotron EPIRB & SART Technical Training</li>
+        <li>Electronic Engineering Degree — Universidad Nacional de Mar del Plata</li>
       </ul>
 
-    </div>
+    </section>
 
-  </section>
+    <!-- PROJECTS -->
+    <section id="projects">
 
-  <!-- EXPERIENCE -->
-  <section id="experience" class="container section">
+      <h2>Selected Projects</h2>
 
-    <h2>Experience</h2>
+      <p>
+        My projects combine embedded systems,
+        marine electronics and practical diagnostic tools for field use.
+      </p>
 
-    <div class="timeline">
+      <ul>
 
-      <div class="timeline-item">
-        <h3>THEMYS</h3>
-        <p>Marine Electronics & NAVCOM Systems</p>
-      </div>
-
-      <div class="timeline-item">
-        <h3>Argentine Navy</h3>
-        <p>Radar and Navigation Systems</p>
-      </div>
-
-      <div class="timeline-item">
-        <h3>Embedded & FPGA Development</h3>
-        <p>Personal R&D Projects and Diagnostics Platforms</p>
-      </div>
-
-    </div>
-
-  </section>
-
-  <!-- CONTACT -->
-  <section id="contact" class="container section">
-
-    <h2>Contact</h2>
-
-    <div class="card">
-
-      <ul class="contact-list">
         <li>
-          <a href="https://github.com/matiasscuppa">
-            GitHub
-          </a>
+          <strong>NMEA Link:</strong>
+          portable NMEA0183 monitoring and generator platform.
         </li>
 
         <li>
-          <a href="https://www.linkedin.com/in/matias-scuppa/">
-            LinkedIn
-          </a>
+          <strong>FPGA NMEA Analyzer:</strong>
+          Cyclone 10 FPGA platform for multi-channel serial analysis.
         </li>
 
         <li>
-          <a href="https://orcid.org/0009-0004-0141-5766">
-            ORCID
-          </a>
+          <strong>AIS + SDR Platform:</strong>
+          AIS reception using RTL-SDR, Raspberry Pi and Signal K.
         </li>
 
         <li>
-          <a href="https://www.researchgate.net/profile/Matias-Scuppa">
-            ResearchGate
-          </a>
+          <strong>Embedded Diagnostics:</strong>
+          tools for testing and troubleshooting marine communication systems.
         </li>
+
       </ul>
 
-    </div>
+    </section>
 
-  </section>
+    <!-- RESEARCH -->
+    <section id="research">
 
-  <!-- FOOTER -->
-  <footer>
+      <h2>Research & Development</h2>
 
-    <div class="container">
-      <p>© 2026 Matias Scuppa</p>
-    </div>
+      <p>
+        I am interested in the development of robust diagnostic systems
+        for marine electronics, combining embedded hardware,
+        FPGA logic, signal processing and simulation tools.
+      </p>
 
-  </footer>
+      <p>
+        Current areas of interest include NMEA0183,
+        RS232/RS422/RS485 communications,
+        radar and navigation systems,
+        AIS, MATLAB/Simulink workflows
+        and AI-assisted analysis of serial data.
+      </p>
+
+    </section>
+
+    <!-- CV -->
+    <section id="cv">
+
+      <h2>CV</h2>
+
+      <p>
+        CV available upon request or through my professional profiles.
+      </p>
+
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+
+      <h2>Contact</h2>
+
+      <p>
+        Feel free to reach out through the platforms below.
+      </p>
+
+    </section>
+
+    <!-- SOCIAL ICONS -->
+    <section class="social">
+
+      <a href="mailto:matiasscuppa@gmail.com">
+        <i class="fa-solid fa-envelope"></i>
+      </a>
+
+      <a href="https://orcid.org/0009-0004-0141-5766">
+        <i class="fa-brands fa-orcid"></i>
+      </a>
+
+      <a href="https://scholar.google.com/citations?hl=es&user=ks8voxEAAAAJ&view_op=list_works&sortby=title">
+        <i class="fa-solid fa-graduation-cap"></i>
+      </a>
+
+      <a href="https://github.com/matiasscuppa">
+        <i class="fa-brands fa-github"></i>
+      </a>
+
+      <a href="https://www.linkedin.com/in/matias-scuppa/">
+        <i class="fa-brands fa-linkedin"></i>
+      </a>
+
+      <a href="https://www.researchgate.net/profile/Matias-Scuppa">
+        <i class="fa-brands fa-researchgate"></i>
+      </a>
+
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+
+      <p>
+        I'm always open to connect. You can send me an email
+        or reach out over LinkedIn.
+      </p>
+
+    </footer>
+
+  </main>
 
 </body>
 
