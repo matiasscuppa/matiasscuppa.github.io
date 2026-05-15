@@ -4,160 +4,274 @@
 
 body {
   margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
+  padding: 0;
   background: #ffffff;
   color: #111;
-  font-size: 14px;
-  line-height: 1.45;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 15px;
+  line-height: 1.55;
+  font-weight: 400;
 }
+
+/* TOP NAVBAR */
 
 .top-nav {
   width: 100%;
-  height: 36px;
-  border-bottom: 1px solid #ddd;
+  height: 44px;
+  border-bottom: 1px solid #dddddd;
+
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 18px;
-  font-size: 12px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 22px;
 }
 
 .top-nav a {
-  color: #222;
   text-decoration: none;
+  color: #222;
+  font-size: 13px;
+  font-weight: 400;
 }
 
 .top-nav a:hover,
-.top-nav .active {
-  color: #0087c7;
+.top-nav a.active {
+  color: #1f9acb;
 }
 
+/* MAIN PAGE */
+
 .page {
-  max-width: 760px;
+  max-width: 980px;
   margin: 0 auto;
-  padding: 34px 20px 50px;
+  padding: 58px 20px 80px;
 }
+
+/* INTRO */
 
 .intro {
   display: grid;
-  grid-template-columns: 1fr 190px;
-  gap: 50px;
+  grid-template-columns: 1fr 280px;
+  gap: 70px;
   align-items: start;
 }
 
+.intro-text {
+  max-width: 620px;
+}
+
+/* NAME */
+
 h1 {
-  font-size: 30px;
+  margin: 0 0 12px;
+  font-size: 48px;
+  line-height: 1.05;
   font-weight: 300;
-  margin: 0 0 8px;
+  letter-spacing: -1px;
 }
 
 h1 strong {
   font-weight: 700;
 }
 
+/* SUBTITLE */
+
 .tagline {
-  font-weight: 700;
   margin: 0;
-  font-size: 13px;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 1.4;
 }
 
 .role {
+  margin-top: 2px;
+  margin-bottom: 28px;
+  font-size: 17px;
   font-weight: 700;
-  margin: 2px 0 12px;
-  font-size: 13px;
 }
+
+/* SECTION TITLES */
 
 h2 {
-  font-size: 24px;
-  font-weight: 400;
-  margin: 12px 0 8px;
+  margin-top: 0;
+  margin-bottom: 18px;
+
+  font-size: 33px;
+  line-height: 1.1;
+  font-weight: 300;
+  letter-spacing: -0.5px;
 }
 
+/* TEXT */
+
 p {
-  margin: 0 0 12px;
+  margin-top: 0;
+  margin-bottom: 20px;
 }
+
+/* PROFILE IMAGE */
 
 .photo-box {
   display: flex;
   justify-content: center;
-  padding-top: 75px;
+  padding-top: 52px;
 }
 
 .photo-box img {
-  width: 160px;
-  height: 160px;
-  border-radius: 50%;
+  width: 220px;
+  height: 220px;
+
   object-fit: cover;
-  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.25);
+
+  border-radius: 50%;
+
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.18);
 }
 
+/* DETAILS */
+
 details {
-  margin-top: 12px;
+  margin-top: 18px;
 }
 
 summary {
-  font-weight: 700;
   cursor: pointer;
-  margin-bottom: 6px;
-}
-
-ul {
-  margin-top: 6px;
-  padding-left: 28px;
-}
-
-li {
-  margin-bottom: 4px;
-}
-
-section {
+  font-weight: 700;
   margin-bottom: 12px;
 }
 
-a {
-  color: #0087c7;
+/* LISTS */
+
+ul {
+  padding-left: 26px;
 }
+
+li {
+  margin-bottom: 8px;
+}
+
+/* SECTIONS */
+
+section {
+  margin-bottom: 34px;
+}
+
+/* LINKS */
+
+a {
+  color: #1f9acb;
+}
+
+/* SOCIAL */
 
 .social {
   display: flex;
   justify-content: center;
-  gap: 13px;
-  margin-top: 28px;
-  margin-bottom: 14px;
+  gap: 16px;
+
+  margin-top: 42px;
+  margin-bottom: 18px;
 }
 
 .social a {
   color: #000;
-  font-size: 38px;
   text-decoration: none;
+  font-size: 44px;
 }
 
 .social a:hover {
-  color: #0087c7;
+  color: #1f9acb;
 }
+
+/* FOOTER */
 
 footer {
   text-align: center;
-  font-size: 11px;
-  margin-top: 10px;
+  font-size: 12px;
+  color: #444;
+
+  margin-top: 18px;
 }
 
-@media (max-width: 700px) {
+/* BLOG PAGE */
+
+.blog-page {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 70px 20px 80px;
+}
+
+.blog-hero {
+  text-align: center;
+  margin-bottom: 90px;
+}
+
+.blog-hero h1 {
+  font-size: 92px;
+  line-height: 0.95;
+  font-weight: 300;
+  color: #1f9acb;
+
+  margin-bottom: 26px;
+}
+
+.blog-hero p {
+  font-size: 28px;
+  font-weight: 300;
+}
+
+.blog-list {
+  border-top: 1px solid #dddddd;
+}
+
+.blog-post {
+  padding: 42px 0;
+  border-bottom: 1px solid #dddddd;
+}
+
+.blog-post h2 {
+  font-size: 28px;
+  margin-bottom: 12px;
+}
+
+.post-meta {
+  margin-top: 14px;
+
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+
+  color: #777;
+  font-size: 14px;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 850px) {
+
   .intro {
     grid-template-columns: 1fr;
+    gap: 30px;
   }
 
   .photo-box {
-    padding-top: 10px;
     justify-content: flex-start;
+    padding-top: 0;
   }
 
-  .top-nav {
-    gap: 12px;
-    font-size: 11px;
+  .blog-hero h1 {
+    font-size: 56px;
   }
 
-  .social a {
-    font-size: 32px;
+  h1 {
+    font-size: 40px;
   }
+
+  h2 {
+    font-size: 28px;
+  }
+
 }
