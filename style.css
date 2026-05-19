@@ -215,6 +215,7 @@ footer {
 /* TABLET */
 
 @media (max-width: 850px) {
+
   .page {
     padding: 42px 24px 60px;
   }
@@ -225,7 +226,8 @@ footer {
   }
 
   .photo-box {
-    justify-content: flex-start;
+    order: -1;
+    justify-content: center;
     padding-top: 0;
   }
 
@@ -249,6 +251,7 @@ footer {
 /* MOBILE */
 
 @media (max-width: 520px) {
+
   body {
     font-size: 14px;
   }
@@ -283,6 +286,7 @@ footer {
   }
 
   .photo-box {
+    order: -1;
     justify-content: center;
   }
 
